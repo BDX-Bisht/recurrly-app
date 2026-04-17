@@ -64,20 +64,18 @@ export default function App() {
             </View>
             <View>
                 <ListHeading title="All Subscription" />
-                <FlatList
-                    data={HOME_SUBSCRIPTIONS}
-                    renderItem={({ item }) => (
-                        <SubscriptionCard
-                            {...item}
-                            expanded={expandedSubscriptionId === item.id}
-                            onPress={() =>
-                                setExpandedSubscriptionId((currentid) =>
-                                    currentid === item.id ? null : item.id,
-                                )
-                            }
-                        />
-                    )}
-                    keyExtractor={(item) => item.id}
+                <SubscriptionCard
+                    {...HOME_SUBSCRIPTIONS[0]}
+                    expanded={
+                        expandedSubscriptionId === HOME_SUBSCRIPTIONS[0].id
+                    }
+                    onPress={() =>
+                        setExpandedSubscriptionId((currenId) =>
+                            currenId === HOME_SUBSCRIPTIONS[0].id
+                                ? null
+                                : HOME_SUBSCRIPTIONS[0].id,
+                        )
+                    }
                 />
             </View>
         </SafeAreaView>
