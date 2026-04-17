@@ -43,12 +43,12 @@
                 "expo-font",
                 {
                     "fonts": [
-                        "./assets/fonts/Poppins-Regular.ttf",
-                        "./assets/fonts/Poppins-Bold.ttf",
-                        "./assets/fonts/Poppins-Medium.ttf",
-                        "./assets/fonts/Poppins-SemiBold.ttf",
-                        "./assets/fonts/Poppins-ExtraBold.ttf",
-                        "./assets/fonts/Poppins-Light.ttf"
+                        "./assets/fonts/PlusJakartaSans-Regular.ttf",
+                        "./assets/fonts/PlusJakartaSans-Bold.ttf",
+                        "./assets/fonts/PlusJakartaSans-Medium.ttf",
+                        "./assets/fonts/PlusJakartaSans-SemiBold.ttf",
+                        "./assets/fonts/PlusJakartaSans-ExtraBold.ttf",
+                        "./assets/fonts/PlusJakartaSans-Light.ttf"
                     ]
                 }
             ]

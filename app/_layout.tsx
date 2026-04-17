@@ -5,12 +5,12 @@ import { useEffect } from "react";
 
 export default function RootLayout() {
     const [fontsLoaded] = useFonts({
-        "sans-regular": require("../assets/fonts/Poppins-Regular.ttf"),
-        "sans-bold": require("../assets/fonts/Poppins-Bold.ttf"),
-        "sans-medium": require("../assets/fonts/Poppins-Medium.ttf"),
-        "sans-semibold": require("../assets/fonts/Poppins-SemiBold.ttf"),
-        "sans-extrabold": require("../assets/fonts/Poppins-ExtraBold.ttf"),
-        "sans-light": require("../assets/fonts/Poppins-Light.ttf"),
+        "sans-regular": require("../assets/fonts/PlusJakartaSans-Regular.ttf"),
+        "sans-bold": require("../assets/fonts/PlusJakartaSans-Bold.ttf"),
+        "sans-medium": require("../assets/fonts/PlusJakartaSans-Medium.ttf"),
+        "sans-semibold": require("../assets/fonts/PlusJakartaSans-SemiBold.ttf"),
+        "sans-extrabold": require("../assets/fonts/PlusJakartaSans-ExtraBold.ttf"),
+        "sans-light": require("../assets/fonts/PlusJakartaSans-Light.ttf"),
     });
 
     useEffect(() => {
