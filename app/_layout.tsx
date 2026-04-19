@@ -4,6 +4,7 @@ import { tokenCache } from "@clerk/expo/token-cache";
 import { useFonts } from "expo-font";
 import { SplashScreen, Stack } from "expo-router";
 import { useEffect } from "react";
+import { PostHogProvider } from "posthog-react-native";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -37,8 +38,13 @@ const InitialLayout = () => {
 
 export default function RootLayout() {
     return (
-        <ClerkProvider publishableKey={publishableKey} tokenCache={tokenCache}>
-            <InitialLayout />
-        </ClerkProvider>
+        <PostHogProvider
+            apiKey={process.env.EXPO_PUBLIC_POSTHOG_KEY!}
+            options={{ host: process.env.EXPO_PUBLIC_POSTHOG_HOST }}
+        >
+            <ClerkProvider publishableKey={publishableKey} tokenCache={tokenCache}>
+                <InitialLayout />
+            </ClerkProvider>
+        </PostHogProvider>
     );
 }

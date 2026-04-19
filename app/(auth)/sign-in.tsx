@@ -47,7 +47,8 @@ export default function SignInPage() {
                     if (session?.currentTask) {
                         return;
                     }
-                    router.replace("/(tabs)" as Href);
+                    // Redirection is automatically handled by the <Redirect> in app/(auth)/_layout.tsx
+                    // when the active session triggers isSignedIn to become true.
                 },
             });
         }
